@@ -16,7 +16,7 @@
 // :: 14.0 CONTACT FORM ACTIVE CODE
 
 (function ($) {
-  "use strict";
+  "use client";
 
   var $window = $(window);
   var zero = 0;

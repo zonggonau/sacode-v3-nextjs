@@ -111,9 +111,7 @@ export default function Header() {
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li className="dropdown-submenu">
-                    <Link className="dropdown-item dropdown-toggle" href="/">
-                      SaCode's Weekend
-                    </Link>
+                    SaCode's Weekend
                     <ul className="dropdown-menu">
                       <li>
                         <Link
@@ -142,9 +140,7 @@ export default function Header() {
                     </ul>
                   </li>
                   <li className="dropdown-submenu">
-                    <Link className="dropdown-item dropdown-toggle" href="/">
-                      SaCode Live
-                    </Link>
+                    SaCode Live
                     <ul className="dropdown-menu">
                       <li>
                         <Link

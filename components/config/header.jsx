@@ -95,29 +95,29 @@ export default function Header() {
                   <i className="fas fa-book-open"></i> Pelatihan
                 </Link>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <Link
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="komunitas"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  <i class="fas fa-globe"></i> Komunitas
+                  <i className="fas fa-globe"></i> Komunitas
                 </Link>
                 <ul
-                  class="dropdown-menu"
+                  className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li class="dropdown-submenu">
-                    <Link class="dropdown-item dropdown-toggle" href="/">
+                  <li className="dropdown-submenu">
+                    <span className="dropdown-item dropdown-toggle">
                       SaCode's Weekend
-                    </Link>
-                    <ul class="dropdown-menu">
+                    </span>
+                    <ul className="dropdown-menu">
                       <li>
                         <Link
-                          class="dropdown-item"
+                          className="dropdown-item"
                           href="/komunitas/sacodeweekend/2023"
                         >
                           2023
@@ -125,7 +125,7 @@ export default function Header() {
                       </li>
                       <li>
                         <Link
-                          class="dropdown-item"
+                          className="dropdown-item"
                           href="/komunitas/sacodeweekend/2022"
                         >
                           2022
@@ -133,7 +133,7 @@ export default function Header() {
                       </li>
                       <li>
                         <Link
-                          class="dropdown-item"
+                          className="dropdown-item"
                           href="/komunitas/sacodeweekend/2021"
                         >
                           2021
@@ -141,16 +141,16 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown-submenu">
-                    <Link
-                      class="dropdown-item dropdown-toggle"
-                      href="javascript:;"
-                    >
+                  <li className="dropdown-submenu">
+                    <Link className="dropdown-item dropdown-toggle" href="/">
                       SaCode Live
                     </Link>
-                    <ul class="dropdown-menu">
+                    <ul className="dropdown-menu">
                       <li>
-                        <Link class="dropdown-item" href="./sacode-live-2023">
+                        <Link
+                          className="dropdown-item"
+                          href="./sacode-live-2023"
+                        >
                           2023
                         </Link>
                       </li>

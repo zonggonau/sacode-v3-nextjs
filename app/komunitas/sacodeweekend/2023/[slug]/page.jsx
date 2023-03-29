@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getSacodeWeekendById } from "@/lib/api";
+import { getSacodeWeekendBySlug } from "@/lib/api";
 import Footerconfig from "@/components/config/footerconfig";
 
 export default async function page({ params }) {
-  const { data } = await getSacodeWeekendById(params.slug);
+  const { data } = await getSacodeWeekendBySlug(params.slug);
   console.log(data);
   return (
     <div>
@@ -39,7 +39,7 @@ export default async function page({ params }) {
                 data-aos-duration="1000"
               >
                 <Image
-                  src={`https://adminpanel.sacode.web.id/storage/${data.poster}`}
+                  src={`https://adminpanel.sacode.web.id/file/poster/${data.poster}`}
                   width={500}
                   height={500}
                   alt=""

@@ -16,7 +16,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "adminpanel.sacode.web.id",
         port: "",
-        pathname: "/storage/**",
+        pathname: "/file/**",
       },
     ],
   },

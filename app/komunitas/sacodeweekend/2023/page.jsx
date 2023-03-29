@@ -69,7 +69,7 @@ export default async function Sacodeweekend() {
               if (item.status === "active") {
                 return (
                   <div className="col-12 col-md-6 col-lg-4 mb-5 res-margin">
-                    <Link href={`/komunitas/sacodeweekend/2023/${item.id}`}>
+                    <Link href={`/komunitas/sacodeweekend/2023/${item.slug}`}>
                       <div className="single-review card">
                         <div className="card-top p-4">
                           <h4 className="text-primary mt-4 mb-3">
@@ -114,7 +114,7 @@ export default async function Sacodeweekend() {
                           <div className="reviewer-thumb">
                             <Image
                               className="avatar-lg radius-100"
-                              src={`https://adminpanel.sacode.web.id/storage/${item.profile_picture}`}
+                              src={`https://adminpanel.sacode.web.id/file/poster/${item.speaker.profile_picture}`}
                               alt=""
                               width={500}
                               height={500}
@@ -123,10 +123,10 @@ export default async function Sacodeweekend() {
 
                           <div className="reviewer-meta media-body align-self-center ml-4">
                             <h5 className="reviewer-name color-primary mb-2">
-                              {item.first_name} {item.last_name}
+                              {item.speaker.first_name} {item.speaker.last_name}
                             </h5>
                             <h6 className="text-secondary fw-3">
-                              {item.job_title}
+                              {item.speaker.job_title}
                             </h6>
                           </div>
                         </div>
